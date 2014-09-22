@@ -79,7 +79,7 @@ BlockquoteEditor.prototype.onClick = function() {
 			range.setStartBefore( start );
 		}
 
-		bq = new Element('blockquote');
+		bq = document.createElement('blockquote');
 		range.surroundContents(bq);
 	}
 
